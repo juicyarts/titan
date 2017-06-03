@@ -22,3 +22,14 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+* https://thesocietea.org/2017/02/building-a-json-api-with-rails-part-6-the-json-api-spec-pagination-and-versioning/
+
+* https://github.com/DatabaseCleaner/database_cleaner
+
+* https://github.com/doorkeeper-gem/doorkeeper#installation
+
+* https://github.com/codahale/bcrypt-ruby
+
+* https://github.com/inossidabile/protector
