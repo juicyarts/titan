@@ -21,6 +21,7 @@ gem 'puma', '~> 3.7'
 
 gem 'dotenv-rails', groups: [:development, :test, :production]
 gem 'active_model_serializers', '~> 0.8.3'
+gem 'bcrypt'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

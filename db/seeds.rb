@@ -10,22 +10,21 @@ c1 = Company.create(name: "Titan Inc.", state: 0)
 c2 = Company.create(name: "Steel Heroes", state: 1)
 c3 = Company.create(name: "Metal Bro's", state: 1)
 
-b = {}
 b1 = Branch.create(name: "Department West", state: 0, company: c1)
-b2 = Branch.create(name: "Department East", state: 0, company: c1)
+b2 = Branch.create(name: "Department East", state: 1, company: c1)
 b3 = Branch.create(name: "Department North", state: 0, company: c1)
-b4 = Branch.create(name: "Department South", state: 0, company: c1)
+b4 = Branch.create(name: "Department South", state: 1, company: c1)
 
 b5 = Branch.create(name: "Trash Sector", state: 0, company: c3)
 b6 = Branch.create(name: "Doom Sector", state: 0, company: c3)
-b7 = Branch.create(name: "Speed Sector", state: 0, company: c3)
+b7 = Branch.create(name: "Speed Sector", state: 1, company: c3)
 b8 = Branch.create(name: "Pagan Sector", state: 0, company: c3)
 
-b9 = Branch.create(name: "Unit Europe", state: 0, company: c2)
-b10 = Branch.create(name: "Unit Asia", state: 0, company: c2)
+b9 = Branch.create(name: "Unit Europe", state: 1, company: c2)
+b10 = Branch.create(name: "Unit Asia", state: 1, company: c2)
 b11 = Branch.create(name: "Unit Australia", state: 0, company: c2)
 b12 = Branch.create(name: "Unit Afrika", state: 0, company: c2)
-b13 = Branch.create(name: "Unit Ameriak", state: 0, company: c2)
+b13 = Branch.create(name: "Unit Ameriak", state: 1, company: c2)
 
 FactoryElement.create(name: "Betamethasone Dipropionate",state: 0,branch: b1)
 FactoryElement.create(name: "Seborrheic",state: 1,branch: b2)
