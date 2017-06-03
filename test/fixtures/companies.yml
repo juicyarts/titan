@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  logo: 
+  vat_nr: MyString
+  state: 
+
+two:
+  name: MyString
+  logo: 
+  vat_nr: MyString
+  state: 

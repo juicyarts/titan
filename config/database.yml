@@ -20,10 +20,14 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: <%= ENV['DB_NAME'] %>
   password: <%= ENV['DB_PASS'] %>
   username: <%= ENV['DB_USER'] %>
-  host: <%= ENV['DB_HOST'] %>
+  host: <%= ENV['DB_HOST'] %>  
+  # pool: 2
+  # host: localhost
+  # database: titan
+  # username: titan-user
+  # password: titan-pass
 
 development:
   <<: *default
@@ -85,5 +89,3 @@ test:
 production:
   <<: *default
   database: titan_production
-  username: titan
-  password: <%= ENV['TITAN_DATABASE_PASSWORD'] %>
