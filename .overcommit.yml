@@ -22,15 +22,10 @@ PreCommit:
       - master
       - develop
   RuboCop:
-   enabled: true
-   on_warn: fail # Treat all warnings as failures
+    enabled: true
+    on_warn: fail # Treat all warnings as failures
 PostCheckout:
   BundleInstall:
     enabled: true
   NpmInstall:
     enabled: true
-PrePush:
-  RakeTest:
-    enabled: true
-    description: 'Run rake tests'
-    command: [ "rake", "test" ]
