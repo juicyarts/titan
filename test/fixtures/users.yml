@@ -7,10 +7,11 @@ one:
   last_name: MyString
   company_name: MyString
   email: MyString
-  password: MyString
+  password_digest: MyString
   position_name: MyString
-  auth_token: MyString
+  token: MyString
   show_onboarding_screen: false
+  state: 1
 
 two:
   salutation: MyString
@@ -19,7 +20,8 @@ two:
   last_name: MyString
   company_name: MyString
   email: MyString
-  password: MyString
+  password_digest: MyString
   position_name: MyString
-  auth_token: MyString
+  token: MyString
   show_onboarding_screen: false
+  state: 1

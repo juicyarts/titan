@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'test_helper'
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
@@ -16,18 +14,19 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     assert_difference('User.count') do
       post users_url, params: {
         user: {
-        academic_title: @user.academic_title,
-        auth_token: @user.auth_token,
-        company_name: @user.company_name,
-        email: @user.email,
-        first_name: @user.first_name,
-        last_name: @user.last_name,
-        password: @user.password,
-        position_name: @user.position_name,
-        salutation: @user.salutation,
-        show_onboarding_screen: @user.show_onboarding_screen
-      }
-    }, as: :json
+          academic_title: @user.academic_title,
+          token: @user.token,
+          company_name: @user.company_name,
+          email: @user.email,
+          first_name: @user.first_name,
+          last_name: @user.last_name,
+          password_digest: @user.password_digest,
+          position_name: @user.position_name,
+          salutation: @user.salutation,
+          show_onboarding_screen: @user.show_onboarding_screen,
+          state: @user.state
+        }
+      }, as: :json
     end
 
     assert_response 201
@@ -42,15 +41,16 @@ class UsersControllerTest < ActionDispatch::IntegrationTest
     patch user_url(@user), params: {
       user: {
         academic_title: @user.academic_title,
-        auth_token: @user.auth_token,
+        token: @user.token,
         company_name: @user.company_name,
         email: @user.email,
         first_name: @user.first_name,
         last_name: @user.last_name,
-        password: @user.password,
+        password_digest: @user.password_digest,
         position_name: @user.position_name,
         salutation: @user.salutation,
-        show_onboarding_screen: @user.show_onboarding_screen
+        show_onboarding_screen: @user.show_onboarding_screen,
+        state: @user.state
       }
     }, as: :json
     assert_response 200

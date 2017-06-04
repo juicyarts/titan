@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-# create Users
 class CreateUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :users do |t|
@@ -10,9 +7,9 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.string :last_name
       t.string :company_name
       t.string :email
-      t.string :password
+      t.string :password_digest
       t.string :position_name
-      t.string :auth_token
+      t.string :token
       t.boolean :show_onboarding_screen
       t.integer :state
 

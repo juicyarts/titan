@@ -8,10 +8,12 @@
 #   movies = Movie.create([[ name: 'Star Wars' ], [ name: 'Lord of the Rings' ]])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Company.destroy_all
 c1 = Company.create(name: 'Titan Inc.', state: 0)
 c2 = Company.create(name: 'Steel Heroes', state: 1)
 c3 = Company.create(name: "Metal Bro's", state: 1)
 
+Branch.destroy_all
 b1 = Branch.create(name: 'Department West', state: 0, company: c1)
 b2 = Branch.create(name: 'Department East', state: 1, company: c1)
 b3 = Branch.create(name: 'Department North', state: 0, company: c1)
@@ -28,6 +30,7 @@ b11 = Branch.create(name: 'Unit Australia', state: 0, company: c2)
 b12 = Branch.create(name: 'Unit Afrika', state: 0, company: c2)
 b13 = Branch.create(name: 'Unit Ameriak', state: 1, company: c2)
 
+FactoryElement.destroy_all
 FactoryElement.create(name: 'Betamethasone Dipropionate', state: 0, branch: b1)
 FactoryElement.create(name: 'Seborrheic', state: 1, branch: b2)
 FactoryElement.create(name: 'Readybath TPC', state: 0, branch: b3)
@@ -58,6 +61,7 @@ FactoryElement.create(name: 'Citalopram', state: 0, branch: b1)
 FactoryElement.create(name: 'Methocarbamol', state: 0, branch: b2)
 FactoryElement.create(name: 'RespiratoryCare', state: 1, branch: b3)
 
+User.destroy_all
 User.create(
   first_name: 'Titan',
   last_name: 'User',
@@ -66,6 +70,16 @@ User.create(
   position_name: 'Lord',
   company_name: 'Titan Company',
   email: 'user@titan.com',
+  state: 0,
+  show_onboarding_screen: true,
+  password: 'password'
+)
+
+User.create(
+  first_name: 'Aluminium',
+  last_name: 'User',
+  company_name: 'Aluminium Company',
+  email: 'user@aluminium.com',
   state: 0,
   show_onboarding_screen: true,
   password: 'password'

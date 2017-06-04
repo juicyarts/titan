@@ -14,9 +14,9 @@ gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.1'
 
 # TODO: Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+# gem 'jbuilder', '~> 2.5'
 # TODO: Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 3.0'
+# gem 'redis', '~> 3.0'
 
 # TODO: Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
@@ -33,7 +33,6 @@ group :test do
 end
 
 group :development do
-  # TODO: Overcommit for actions after commit
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'overcommit'
   gem 'rubocop-rails'

@@ -4,6 +4,7 @@ class UserSerializer < ActiveModel::Serializer
     :academic_title,
     :first_name,
     :last_name,
+    :company_name,
     :email,
     :position_name,
     :show_onboarding_screen,
