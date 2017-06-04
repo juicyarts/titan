@@ -1,3 +1,8 @@
+
+
+# frozen_string_literal: true
+
+# some desc
 class CreateFactoryElements < ActiveRecord::Migration[5.1]
   def change
     create_table :factory_elements do |t|

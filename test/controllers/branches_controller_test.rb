@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class BranchesControllerTest < ActionDispatch::IntegrationTest
@@ -5,30 +7,44 @@ class BranchesControllerTest < ActionDispatch::IntegrationTest
     @branch = branches(:one)
   end
 
-  test "should get index" do
+  test 'should get index' do
     get branches_url, as: :json
     assert_response :success
   end
 
-  test "should create branch" do
+  test 'should create branch' do
     assert_difference('Branch.count') do
-      post branches_url, params: { branch: { company_id: @branch.company_id, logo: @branch.logo, name: @branch.name, state: @branch.state } }, as: :json
+      post branches_url, params: {
+        branch: {
+          company_id: @branch.company_id,
+          logo: @branch.logo,
+          name: @branch.name,
+          state: @branch.state
+        }
+      }, as: :json
     end
 
     assert_response 201
   end
 
-  test "should show branch" do
+  test 'should show branch' do
     get branch_url(@branch), as: :json
     assert_response :success
   end
 
-  test "should update branch" do
-    patch branch_url(@branch), params: { branch: { company_id: @branch.company_id, logo: @branch.logo, name: @branch.name, state: @branch.state } }, as: :json
+  test 'should update branch' do
+    patch branch_url(@branch), params: {
+      branch: {
+        company_id: @branch.company_id,
+        logo: @branch.logo,
+        name: @branch.name,
+        state: @branch.state
+      }
+    }, as: :json
     assert_response 200
   end
 
-  test "should destroy branch" do
+  test 'should destroy branch' do
     assert_difference('Branch.count', -1) do
       delete branch_url(@branch), as: :json
     end

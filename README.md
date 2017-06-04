@@ -10,6 +10,7 @@ Things you may want to cover:
 * System dependencies
     * ```$ gem install bundler```
     * ```$ gem install pg```
+    * ```$ gem install overcommit```
 * Database creation
     * ```$ docker-compose up -d```
     * wait a moment until the db is initialized

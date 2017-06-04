@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# create Components
 class CreateCompanies < ActiveRecord::Migration[5.1]
   def change
     create_table :companies do |t|

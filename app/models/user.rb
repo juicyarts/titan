@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    enum state: [ :enabled, :disabled]
+  enum state: [ :enabled, :disabled]
 end
