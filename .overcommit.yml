@@ -30,6 +30,7 @@ PostCheckout:
   NpmInstall:
     enabled: true
 PrePush:
-  RSpec:
+  RakeTest:
     enabled: true
+    description: 'Run rake tests'
     command: [ "rake", "test" ]
