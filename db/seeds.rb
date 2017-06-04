@@ -63,24 +63,11 @@ FactoryElement.create(name: 'RespiratoryCare', state: 1, branch: b3)
 
 User.destroy_all
 User.create(
-  first_name: 'Titan',
-  last_name: 'User',
-  academic_title: 'Dr.',
-  salutation: 'Sir',
-  position_name: 'Lord',
-  company_name: 'Titan Company',
   email: 'user@titan.com',
-  state: 0,
-  show_onboarding_screen: true,
   password: 'password'
 )
 
 User.create(
-  first_name: 'Aluminium',
-  last_name: 'User',
-  company_name: 'Aluminium Company',
   email: 'user@aluminium.com',
-  state: 0,
-  show_onboarding_screen: true,
   password: 'password'
 )

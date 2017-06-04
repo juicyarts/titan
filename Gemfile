@@ -19,8 +19,8 @@ gem 'rails', '~> 5.1.1'
 # gem 'redis', '~> 3.0'
 
 # TODO: Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
-
+# gem 'bcrypt', '~> 3.1.7'
+gem 'devise'
 gem 'dotenv-rails'
 
 group :development, :test do
