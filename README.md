@@ -38,6 +38,9 @@ Things you may want to cover:
 
 * Auth
     > https://github.com/doorkeeper-gem/doorkeeper#installation
+    > https://github.com/nsarno/knock
+    > https://www.sitepoint.com/authenticate-your-rails-api-with-jwt-from-scratch/
+    > http://apionrails.icalialabs.com/book/chapter_five
 * Security
     > https://github.com/codahale/bcrypt-ruby
 * Access
