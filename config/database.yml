@@ -66,6 +66,9 @@ development:
 test:
   <<: *default
   database: titan_test
+  password: <%= ENV['PG_PASSWORD'] %>
+  username: postgres
+  host: <%= ENV['DB_HOST'] %>
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is

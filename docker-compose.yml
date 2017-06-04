@@ -9,6 +9,7 @@ services:
       - DB_USER
       - DB_PASS
       - DB_NAME
+      - PG_PASSWORD
     volumes:
       - persistent:/var/lib/postgresql
 volumes:
