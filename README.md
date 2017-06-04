@@ -6,30 +6,39 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-
+    > 2.4
 * System dependencies
-
-* Configuration
-
+    * ```$ gem install bundler```
+    * ```$ gem install pg```
 * Database creation
-
+    * ```$ docker-compose up -d```
+    * wait a moment until the db is initialized
 * Database initialization
-
+    * On First Init
+        * ```$ rake db:create```
+        * ```$ rake db:migrate```
+    * Test Data
+        * ```$ rake db:seed```
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    * ```$ rake test```
+* How to run the application
+    * ```$ bundle install```
+    * ```$ rails s```
 
 
-* https://thesocietea.org/2017/02/building-a-json-api-with-rails-part-6-the-json-api-spec-pagination-and-versioning/
+*TODOS:*
 
-* https://github.com/DatabaseCleaner/database_cleaner
+* Proper Testing
+    * DB CLeanup
+        > https://github.com/DatabaseCleaner/database_cleaner
+* JSON APi
+    > https://thesocietea.org/2017/02/building-a-json-api-with-rails-part-6-the-json-api-spec-pagination-and-versioning/
+* Graph QL
+    > https://medium.com/@DrawandCode/building-a-graphql-api-in-rails-part-1-a40aaf7e165f
 
-* https://github.com/doorkeeper-gem/doorkeeper#installation
-
-* https://github.com/codahale/bcrypt-ruby
-
-* https://github.com/inossidabile/protector
+* Auth
+    > https://github.com/doorkeeper-gem/doorkeeper#installation
+* Security
+    > https://github.com/codahale/bcrypt-ruby
+* Access
+    > https://github.com/inossidabile/protector
